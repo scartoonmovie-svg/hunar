@@ -1,0 +1,17 @@
+# Large video file - host separately
+hunar-video.mp4
+*.mp4
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node modules (if using any build tools in future)
+node_modules/

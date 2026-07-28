@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>हुनर बाजार | Hunar Bazaar 2026</title>
+    <link rel="stylesheet" href="style-new.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="School Logo" class="school-logo">
+                <div class="logo-text">
+                    <h1>हुनर बाजार</h1>
+                    <span>HUNAR BAZAAR 2026</span>
+                </div>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu desktop-only" id="navMenuDesktop">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="stalls.html">Stalls</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="register.html" class="btn-register">Register Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay - Direct child of body (outside navbar) -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close menu">&times;</button>
+        <ul class="mobile-menu-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="stalls.html">Stalls</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="register.html">Register Now</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Background Video - Direct MP4 -->
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline preload="auto" id="heroVideo" poster="logo.png">
+                <source src="hunar-video.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+        </div>
+        <div class="hero-video-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">COMING SOON — 2026 EDITION</div>
+            
+            <!-- Event Countdown Timer -->
+            <div class="countdown-timer">
+                <h4>Event Starts In:</h4>
+                <div class="countdown-grid">
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="days">00</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="hours">00</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="minutes">00</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="seconds">00</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+            
+            <h1 class="hero-title">हुनर बाजार</h1>
+            <h2 class="hero-subtitle">HUNAR BAZAAR 2026</h2>
+            <p class="hero-tagline">Celebrating Innovation • Creativity • Entrepreneurship</p>
+            <div class="hero-description">
+                <h3>The Ultimate Student Fair</h3>
+                <p>Where innovation meets celebration — 50+ stalls, live performances, tech showcases, and endless creativity.</p>
+            </div>
+            <div class="hero-buttons">
+                <a href="register.html" class="btn btn-primary">
+                    <span>Register Your Stall</span>
+                    <i>→</i>
+                </a>
+                <a href="about.html" class="btn btn-secondary">
+                    <span>Explore More</span>
+                    <i>↓</i>
+                </a>
+            </div>
+            <div class="scroll-indicator">
+                <span>SCROLL</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Statistics -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">EVENT STATISTICS</span>
+                <h2>By the Numbers</h2>
+                <p>The scale and impact of Hunar Bazaar 2026</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">🏪</div>
+                    <h3 class="stat-number" data-target="100">0</h3>
+                    <span class="stat-plus">+</span>
+                    <h4>Innovative Stalls</h4>
+                    <p>Showcasing the best ideas</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <h3 class="stat-number" data-target="500">0</h3>
+                    <span class="stat-plus">+</span>
+                    <h4>Visitors Expected</h4>
+                    <p>A massive vibrant crowd</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🏆</div>
+                    <h3 class="stat-number" data-target="25">0</h3>
+                    <span class="stat-plus">+</span>
+                    <h4>Prizes & Recognition</h4>
+                    <p>Celebrating excellence</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🎓</div>
+                    <h3 class="stat-number" data-target="30">0</h3>
+                    <span class="stat-plus">+</span>
+                    <h4>Workshops</h4>
+                    <p>Learn from industry experts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">EXPLORE SECTORS</span>
+                <h2>Choose Your Category</h2>
+                <p>Discover what excites you in the marketplace</p>
+            </div>
+            <div class="categories-grid">
+                <a href="stalls.html?filter=food" class="category-card">
+                    <div class="category-icon">🍔</div>
+                    <h3>Food & Beverage</h3>
+                    <p class="category-count">13 Stalls</p>
+                </a>
+                <a href="stalls.html?filter=arts" class="category-card">
+                    <div class="category-icon">🎨</div>
+                    <h3>Art & Craft</h3>
+                    <p class="category-count">8 Stalls</p>
+                </a>
+                <a href="stalls.html?filter=games" class="category-card">
+                    <div class="category-icon">🎮</div>
+                    <h3>Gaming</h3>
+                    <p class="category-count">13 Stalls</p>
+                </a>
+                <a href="stalls.html?filter=bakery" class="category-card">
+                    <div class="category-icon">🧁</div>
+                    <h3>Bakery & Desserts</h3>
+                    <p class="category-count">3 Stalls</p>
+                </a>
+                <a href="stalls.html?filter=accessories" class="category-card">
+                    <div class="category-icon">🎁</div>
+                    <h3>Fashion & Accessories</h3>
+                    <p class="category-count">2 Stalls</p>
+                </a>
+                <a href="stalls.html?filter=books" class="category-card">
+                    <div class="category-icon">📚</div>
+                    <h3>Books & Stationery</h3>
+                    <p class="category-count">1 Stall</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Showcase Your Talent?</h2>
+                <p>Join the festival and turn your creative ideas into reality. Register your stall today and become part of something extraordinary.</p>
+                <div class="cta-buttons">
+                    <a href="register.html" class="btn btn-primary">Register Now</a>
+                    <a href="about.html" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>हुनर बाजार</h3>
+                    <h4>HUNAR BAZAAR 2026</h4>
+                    <p>The ultimate student innovation festival. Where creativity meets entrepreneurship and every idea finds its marketplace.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>EXPLORE</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="stalls.html">Stalls</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>INFO</h4>
+                    <ul>
+                        <li><a href="map.html">Map</a></li>
+                        <li><a href="rules.html">Rules</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>ENGAGE</h4>
+                    <p>Ready to showcase your talent? Register your stall today.</p>
+                    <a href="register.html" class="btn btn-primary">Register Now</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 हुनर बाजार · HUNAR BAZAAR. ALL RIGHTS RESERVED.</p>
+                <p>BUILT BY STUDENT COUNCIL</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
