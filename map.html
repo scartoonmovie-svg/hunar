@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map | Hunar Bazaar 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="School Logo" class="school-logo">
+                <div class="logo-text">
+                    <h1>हुनर बाजार</h1>
+                    <span>HUNAR BAZAAR 2026</span>
+                </div>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="stalls.html">Stalls</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="map.html" class="active">Map</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="register.html" class="btn-register">Register Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Event Map & Venue Layout</h1>
+            <p>Navigate Hunar Bazaar 2026 with our interactive venue map and find your way to Sant Atulanand Convent School</p>
+        </div>
+    </section>
+
+    <!-- Map Content -->
+    <section class="map-page-section">
+        <div class="container">
+            <!-- Visual Venue Map -->
+            <div class="venue-map-visual">
+                <h2>📍 Interactive Venue Map</h2>
+                <p>Click on any zone to see detailed stall information and directions</p>
+                
+                <div class="venue-layout">
+                    <!-- Map Grid Layout -->
+                    <div class="map-row">
+                        <div class="map-zone entrance" data-zone="Entrance" style="background: linear-gradient(135deg, #10b981, #059669);">
+                            <span class="zone-icon">🚪</span>
+                            <h4>ENTRANCE</h4>
+                            <small>Main Gate</small>
+                        </div>
+                        <div class="map-zone helpdesk" data-zone="Help Desk" style="background: linear-gradient(135deg, #3b82f6, #2563eb);">
+                            <span class="zone-icon">ℹ️</span>
+                            <h4>HELP DESK</h4>
+                            <small>Information</small>
+                        </div>
+                        <div class="map-zone stage" data-zone="Main Stage" style="background: linear-gradient(135deg, #f59e0b, #d97706);">
+                            <span class="zone-icon">🎤</span>
+                            <h4>MAIN STAGE</h4>
+                            <small>Performances</small>
+                        </div>
+                    </div>
+                    
+                    <div class="map-row">
+                        <div class="map-zone food" data-zone="Food Court" style="background: linear-gradient(135deg, #ef4444, #dc2626);">
+                            <span class="zone-icon">🍔</span>
+                            <h4>FOOD COURT</h4>
+                            <small>17 Stalls</small>
+                        </div>
+                        <div class="map-zone ground" data-zone="School Ground" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">
+                            <span class="zone-icon">🏫</span>
+                            <h4>SCHOOL GROUND</h4>
+                            <small>Main Event Area</small>
+                        </div>
+                        <div class="map-zone games" data-zone="Game Zone" style="background: linear-gradient(135deg, #ec4899, #db2777);">
+                            <span class="zone-icon">🎮</span>
+                            <h4>GAME ZONE</h4>
+                            <small>17 Stalls</small>
+                        </div>
+                    </div>
+                    
+                    <div class="map-row">
+                        <div class="map-zone arts" data-zone="Art & Craft" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">
+                            <span class="zone-icon">🎨</span>
+                            <h4>ART & CRAFT</h4>
+                            <small>8 Stalls</small>
+                        </div>
+                        <div class="map-zone innovation" data-zone="DIY & Innovation" style="background: linear-gradient(135deg, #a855f7, #9333ea);">
+                            <span class="zone-icon">💡</span>
+                            <h4>DIY & INNOVATION</h4>
+                            <small>Creative Hub</small>
+                        </div>
+                        <div class="map-zone backgate" data-zone="Back Gate" style="background: linear-gradient(135deg, #64748b, #475569);">
+                            <span class="zone-icon">🚪</span>
+                            <h4>BACK GATE</h4>
+                            <small>Exit</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="zone-details-panel">
+                    <h3>📍 Zone Information</h3>
+                    <div id="zoneInfo">
+                        <p style="text-align: center; color: var(--text-gray); padding: 30px;">
+                            👆 Click on any zone above to see detailed information about stalls, facilities, and activities in that area.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Navigation -->
+            <div class="quick-nav">
+                <h3>🧭 Quick Navigation Guide</h3>
+                <div class="nav-grid">
+                    <div class="nav-card">
+                        <span class="nav-icon">🎫</span>
+                        <h4>Registration Desk</h4>
+                        <p>Located at Main Entrance</p>
+                    </div>
+                    <div class="nav-card">
+                        <span class="nav-icon">🚻</span>
+                        <h4>Restrooms</h4>
+                        <p>Near Food Court & School Ground</p>
+                    </div>
+                    <div class="nav-card">
+                        <span class="nav-icon">🚑</span>
+                        <h4>First Aid</h4>
+                        <p>Help Desk Area</p>
+                    </div>
+                    <div class="nav-card">
+                        <span class="nav-icon">📸</span>
+                        <h4>Photo Booth</h4>
+                        <p>Main Stage Area</p>
+                    </div>
+                    <div class="nav-card">
+                        <span class="nav-icon">🅿️</span>
+                        <h4>Parking</h4>
+                        <p>Front & Back of School</p>
+                    </div>
+                    <div class="nav-card">
+                        <span class="nav-icon">💧</span>
+                        <h4>Water Stations</h4>
+                        <p>Multiple locations</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Map Section -->
+            <div class="map-section">
+                <h2>🗺️ Find Us on Google Maps</h2>
+                <p>Sant Atulanand Convent School, Koirajpur, Harahua, Varanasi, Uttar Pradesh – 221002</p>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.5!2d82.9!3d25.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDE4JzAwLjAiTiA4MsKwNTQnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0; border-radius: 20px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+                <div style="text-align: center; margin-top: 30px;">
+                    <a href="https://maps.app.goo.gl/mzQcaKX9S2BkP9sd8" target="_blank" class="btn btn-primary" style="margin-right: 15px;">
+                        <span>🗺️</span> Open in Google Maps
+                    </a>
+                    <a href="https://maps.app.goo.gl/mzQcaKX9S2BkP9sd8" target="_blank" class="btn btn-secondary">
+                        <span>🧭</span> Get Directions
+                    </a>
+                </div>
+            </div>
+
+            <!-- Transportation & Parking Info -->
+            <div class="transport-info">
+                <h2>🚗 Getting Here & Parking</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h4>🚗 By Car</h4>
+                        <p><strong>From City Center:</strong> Take NH-19, then turn at Koirajpur Junction. School is 2km ahead on left.</p>
+                        <p><strong>Parking:</strong> Ample parking available. Follow volunteer directions for designated spots.</p>
+                        <p><strong>Free Parking:</strong> No parking fees!</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>🚌 By Public Transport</h4>
+                        <p><strong>Bus Routes:</strong> City buses 15, 23, 45 stop at Koirajpur</p>
+                        <p><strong>Auto/Rickshaw:</strong> Easily available from all parts of Varanasi</p>
+                        <p><strong>Nearest Stop:</strong> Koirajpur (5 min walk)</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>🏍️ Two-Wheeler Parking</h4>
+                        <p><strong>Dedicated Area:</strong> Separate two-wheeler parking zone</p>
+                        <p><strong>Security:</strong> Guarded parking with volunteers</p>
+                        <p><strong>Capacity:</strong> 200+ bikes/scooters</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>♿ Accessibility</h4>
+                        <p><strong>Wheelchair Access:</strong> Ramps available at all entrances</p>
+                        <p><strong>Special Parking:</strong> Reserved spots near entrance</p>
+                        <p><strong>Assistance:</strong> Volunteers ready to help</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Venue Details -->
+            <div class="venue-details-section">
+                <h2>📋 Venue Information</h2>
+                <div class="details-grid">
+                    <div class="detail-card">
+                        <div class="detail-icon">📍</div>
+                        <h4>Address</h4>
+                        <p>Sant Atulanand Convent School<br>Koirajpur, Harahua<br>Varanasi, Uttar Pradesh<br>PIN: 221002</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-icon">📞</div>
+                        <h4>Contact</h4>
+                        <p><strong>School Office:</strong><br>principalsacs@gmail.com</p>
+                        <p><strong>Event Coordinator:</strong><br>Sneha Ma'am: +91 96483 93187</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-icon">🏢</div>
+                        <h4>Venue Size</h4>
+                        <p><strong>Event Area:</strong> 5000+ sq meters</p>
+                        <p><strong>Capacity:</strong> 500+ visitors</p>
+                        <p><strong>Stalls:</strong> 100 unique stalls</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-icon">🌳</div>
+                        <h4>Facilities</h4>
+                        <p>✅ Covered areas<br>✅ Open grounds<br>✅ Clean restrooms<br>✅ Water stations<br>✅ First aid<br>✅ Security</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Safety & Guidelines -->
+            <div class="safety-section">
+                <h2>🛡️ Safety & Event Guidelines</h2>
+                <div class="safety-grid">
+                    <div class="safety-card">
+                        <span class="safety-icon">👥</span>
+                        <h4>Look for Volunteers</h4>
+                        <p>Volunteers wearing special badges are available throughout the venue to help with directions and queries.</p>
+                    </div>
+                    <div class="safety-card">
+                        <span class="safety-icon">🚑</span>
+                        <h4>Emergency Services</h4>
+                        <p>First aid station at Help Desk. In case of emergency, contact nearest volunteer immediately.</p>
+                    </div>
+                    <div class="safety-card">
+                        <span class="safety-icon">📱</span>
+                        <h4>Lost & Found</h4>
+                        <p>Report lost items or found belongings at the Help Desk near Main Entrance.</p>
+                    </div>
+                    <div class="safety-card">
+                        <span class="safety-icon">🚫</span>
+                        <h4>Keep Event Clean</h4>
+                        <p>Use dustbins provided throughout the venue. Help us maintain a clean and pleasant environment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>हुनर बाजार</h3>
+                    <h4>HUNAR BAZAAR 2026</h4>
+                    <p>The ultimate student innovation festival.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>EXPLORE</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="stalls.html">Stalls</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>INFO</h4>
+                    <ul>
+                        <li><a href="map.html">Map</a></li>
+                        <li><a href="rules.html">Rules</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>ENGAGE</h4>
+                    <p>Ready to showcase your talent?</p>
+                    <a href="register.html" class="btn btn-primary">Register Now</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 हुनर बाजार · HUNAR BAZAAR. ALL RIGHTS RESERVED.</p>
+                <p>BUILT BY STUDENT COUNCIL</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
